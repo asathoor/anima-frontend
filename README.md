@@ -1,6 +1,73 @@
+Anima-petj WordPress Theme
+===
+
+## A theme for experiments
+
+This theme is prepared for frontend developers. It is a theme for experiments. You can use jQuery out of the box in this theme. 
+
+
+## Install
+
+* Download the zip from this repo
+* Install the file via the WordPress Dashboard
+
+Alternatively you can fork the repo and clone to your local WordPress folders.
+
+
+## CSS layout
+
+In layouts you find two files:
+
+* content-sidebar.css
+* sidebar-content.css
+
+You can copy-paste the content to style.css. In this theme I have made a copy of sidebar-content.css and placed it at the end of the main WordPress theme stylesheet: style.css. Feel free to remove it and use something more handy, such as Flexbox or other grid systems.
+
+Either add the code to style.css or add it to the "Cutom CSS" feature on the Dashboard Customize panel.
+
+The content of the two files will give you an idea of the classes and id's you have to style in order to control your layout:
+
+~~~~
+.content-area {
+	float: left;
+	margin: 0 -25% 0 0;
+	width: 100%;
+}
+.site-main {
+	margin: 0 25% 0 0;
+}
+.site-content .widget-area {
+	float: right;
+	overflow: hidden;
+	width: 25%;
+}
+.site-footer {
+	clear: both;
+	width: 100%;
+}
+
+.no-sidebar .content-area {
+	float: none;
+	margin-left: auto;
+	margin-right: auto;
+}
+.no-sidebar .site-main {
+	margin-right: 0;
+}
+~~~~
+
+
+
+## JavaScript
+
+You can add your own script and snibbets in the file: `js/myScript.js`. 
+
+
+----
+
 [![Build Status](https://travis-ci.org/Automattic/_s.svg?branch=master)](https://travis-ci.org/Automattic/_s)
 
-_s
+Baseed on _s
 ===
 
 Hi. I'm a starter theme called `_s`, or `underscores`, if you like. I'm a theme meant for hacking so don't use me as a Parent Theme. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
