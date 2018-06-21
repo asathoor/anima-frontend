@@ -2,7 +2,6 @@
  * file: myScript.js
  * purpose: add your JavaScript here
  **/
-
 console.log('Hello from js/myScript.js - Vanilla JavaScript'); // Vanilla JavaScript test
 
 var $j = jQuery.noConflict();
@@ -17,4 +16,4 @@ $j(function(){
 
     // ... add your code here ...
 
-}); // ends jQuery on-document-ready (don't delete this line!)
+}); // ends jQuery document-ready-function (don't delete this line!)
