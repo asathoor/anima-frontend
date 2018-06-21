@@ -14,6 +14,6 @@ $j(function(){
 
     console.log('Cheers from jQuery too!')
 
-    // ... add your code here ...
+    // ... add your jQuery code here ...
 
 }); // ends jQuery document-ready-function (don't delete this line!)
