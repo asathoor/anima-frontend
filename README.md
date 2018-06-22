@@ -1,4 +1,4 @@
-Anima-petj WordPress Theme
+Anima-eaaa WordPress Theme
 ===
 
 ## A theme for experiments
