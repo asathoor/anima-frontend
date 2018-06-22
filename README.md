@@ -3,7 +3,7 @@ Anima-petj WordPress Theme
 
 ## A theme for experiments
 
-This theme is prepared for frontend developers. It is a theme for experiments. You can use jQuery out of the box in this theme. 
+This theme is prepared for frontend developers. It is a theme for experiments. You can use jQuery out of the box in this theme.
 
 
 ## Install
@@ -56,14 +56,48 @@ The content of the two files will give you an idea of the classes and id's you h
 }
 ~~~~
 
+Or you could use something like Flexbox. Here you could do something along these lines for a 920px wide design:
+
+~~~~
+/* wrapper */
+#page {
+	width: 920px;
+	margin: auto;
+}
+
+/* LAYOUT */
+
+/* content container */
+#content {
+	display: flex;
+}
+
+/* content */
+#primary {
+  width: 500px;
+	overflow: hidden;
+}
+
+/* sidebar */
+#secondary .widget {
+  width: 400px;
+	overflow: hidden;
+	margin-left: 20px;
+}
+~~~~
+
+This is enough to give you the basic idea of the drill. Of course the next step would be to add a few breakpoints in order to create a responsive layout.
+
 
 
 ## JavaScript
 
-You can add your own script and snibbets in the file: `js/myScript.js`. 
+You can add your own script and snibbets in the file: `js/myScript.js`.
 
 
 ----
+
+## Original Introduction to _S
 
 [![Build Status](https://travis-ci.org/Automattic/_s.svg?branch=master)](https://travis-ci.org/Automattic/_s)
 
