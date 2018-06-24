@@ -25,7 +25,7 @@ You can copy-paste the content to style.css. In this theme I have made a copy of
 
 Either add the code to style.css or add it to the "Cutom CSS" feature on the Dashboard Customize panel.
 
-The content of the two files will give you an idea of the classes and id's you have to style in order to control your layout:
+The content of the two files will give you an idea of the classes and id's you have to style in order to control your layout. Here is the content of content-sidebar.css. Obviously you  can use the file as a guideline for your own designs in Flexbox or similar CSS layout systems:
 
 ~~~~
 .content-area {

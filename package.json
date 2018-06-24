@@ -1,0 +1,29 @@
+{
+  "name": "anima-petj",
+  "version": "1.0.0",
+  "description": "WordPress Theme contiued with SASSy options.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asathoor/anima-frontend.git"
+  },
+  "keywords": [
+    "WordPress",
+    "Theme",
+    "Skeleton",
+    "Frontend"
+  ],
+  "author": "Per Thykjaer Jensen",
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": "https://github.com/asathoor/anima-frontend/issues"
+  },
+  "homepage": "https://github.com/asathoor/anima-frontend#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1"
+  }
+}

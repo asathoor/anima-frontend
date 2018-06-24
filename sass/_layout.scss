@@ -1,0 +1,89 @@
+/*! file: _layout.scss */
+
+@mixin responsive( $page-width, $primary-width, $secondary-width ) {
+
+  #page {
+  	width: $page-width;
+    margin: auto;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+
+  /* content container */
+  #content {
+  	display: flex;
+  }
+
+  /* content */
+  #primary {
+    width: $primary-width;
+  	overflow: hidden;
+  }
+
+  /* sidebar */
+  #secondary {
+    width: $secondary-width;
+  	overflow: hidden;
+  	margin-left: 1%;
+  }
+} // responsive mixin
+
+
+/* larger screen */
+#page {
+	width: 95%;
+  margin: auto;
+}
+
+/* content container */
+#content {
+	display: flex;
+  flex-wrap: wrap;
+}
+
+/* content */
+#primary {
+  width: 68%;
+  overflow: hidden;
+}
+
+/* sidebar */
+#secondary {
+  width: 30%;
+
+	overflow: hidden;
+	margin-left: 1%;
+}
+
+// media queries
+/*
+@media all and (min-width:960px) and (max-width: 1024px) {
+
+}
+
+@media all and (min-width:801px) and (max-width: 959px) {
+
+}
+
+@media all and (min-width:769px) and (max-width: 800px) {
+
+}
+
+@media all and (min-width:569px) and (max-width: 768px) {
+
+}
+
+@media all and (min-width:481px) and (max-width: 568px) {
+
+}
+
+@media all and (min-width:321px) and (max-width: 480px) {
+
+}
+*/
+@media all and (min-width:0px) and (max-width: 320px) {
+  body {
+    background: yellow; // test
+  }
+  @include responsive( 95%, 100%, 95%  ); // sidebar to bottom);
+}
