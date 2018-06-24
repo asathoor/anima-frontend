@@ -853,6 +853,7 @@ object {
   display: block; }
 
 /*! file: _layout.scss */
+/* WIDER MEDIA */
 /* larger screen */
 #page {
   width: 95%;
@@ -874,34 +875,122 @@ object {
   overflow: hidden;
   margin-left: 1%; }
 
-/*
-@media all and (min-width:960px) and (max-width: 1024px) {
+/* MEDIA QUERIES */
+@media all and (min-width: 960px) and (max-width: 1024px) {
+  #page {
+    width: 100%;
+    margin: auto;
+    flex-flow: row wrap;
+    justify-content: space-around; }
+  /* content container */
+  #content {
+    display: flex; }
+  /* content */
+  #primary {
+    width: 67%;
+    overflow: hidden; }
+  /* sidebar */
+  #secondary {
+    width: 30%;
+    overflow: hidden;
+    margin-left: 1%; } }
 
-}
+@media all and (min-width: 801px) and (max-width: 959px) {
+  #page {
+    width: 100%;
+    margin: auto;
+    flex-flow: row wrap;
+    justify-content: space-around; }
+  /* content container */
+  #content {
+    display: flex; }
+  /* content */
+  #primary {
+    width: 67%;
+    overflow: hidden; }
+  /* sidebar */
+  #secondary {
+    width: 30%;
+    overflow: hidden;
+    margin-left: 1%; } }
 
-@media all and (min-width:801px) and (max-width: 959px) {
+@media all and (min-width: 769px) and (max-width: 800px) {
+  #page {
+    width: 100%;
+    margin: auto;
+    flex-flow: row wrap;
+    justify-content: space-around; }
+  /* content container */
+  #content {
+    display: flex; }
+  /* content */
+  #primary {
+    width: 67%;
+    overflow: hidden; }
+  /* sidebar */
+  #secondary {
+    width: 30%;
+    overflow: hidden;
+    margin-left: 1%; } }
 
-}
+@media all and (min-width: 569px) and (max-width: 768px) {
+  #page {
+    width: 100%;
+    margin: auto;
+    flex-flow: row wrap;
+    justify-content: space-around; }
+  /* content container */
+  #content {
+    display: flex; }
+  /* content */
+  #primary {
+    width: 57%;
+    overflow: hidden; }
+  /* sidebar */
+  #secondary {
+    width: 40%;
+    overflow: hidden;
+    margin-left: 1%; } }
 
-@media all and (min-width:769px) and (max-width: 800px) {
+@media all and (min-width: 481px) and (max-width: 568px) {
+  #page {
+    width: 95%;
+    margin: auto;
+    flex-flow: row wrap;
+    justify-content: space-around; }
+  /* content container */
+  #content {
+    display: flex; }
+  /* content */
+  #primary {
+    width: 100%;
+    overflow: hidden; }
+  /* sidebar */
+  #secondary {
+    width: 95%;
+    overflow: hidden;
+    margin-left: 1%; } }
 
-}
+@media all and (min-width: 321px) and (max-width: 480px) {
+  #page {
+    width: 95%;
+    margin: auto;
+    flex-flow: row wrap;
+    justify-content: space-around; }
+  /* content container */
+  #content {
+    display: flex; }
+  /* content */
+  #primary {
+    width: 100%;
+    overflow: hidden; }
+  /* sidebar */
+  #secondary {
+    width: 95%;
+    overflow: hidden;
+    margin-left: 1%; } }
 
-@media all and (min-width:569px) and (max-width: 768px) {
-
-}
-
-@media all and (min-width:481px) and (max-width: 568px) {
-
-}
-
-@media all and (min-width:321px) and (max-width: 480px) {
-
-}
-*/
 @media all and (min-width: 0px) and (max-width: 320px) {
-  body {
-    background: yellow; }
   #page {
     width: 95%;
     margin: auto;
