@@ -1,0 +1,85 @@
+/**
+ * file: typography.scss
+ **/
+
+// google fonts
+@import url('https://fonts.googleapis.com/css?family=Cutive+Mono|Poppins:300|Ramabhadra|Titan+One');
+
+/**
+SELECTED FONTS
+
+View the selected fonts: https://fonts.google.com/selection?category=Serif,Sans+Serif,Monospace&selection.family=Cutive+Mono|Poppins:300|Ramabhadra|Titan+One&thickness=4
+**/
+$sitename: 'Titan One', cursive;
+$headlines: 'Ramabhadra', sans-serif;
+$text: 'Poppins', sans-serif;
+$monospace: 'Cutive Mono', monospace;
+
+// sizes
+$small: 90%;
+$large: 120%;
+
+// colors
+$grey: #f7f2f4;
+
+// header styles
+.site-title {
+  a {
+    font-family: $sitename;
+    font-size: 3rem;
+    text-decoration:none;
+  }
+  a:hover {
+    font-family: $sitename;
+    font-size: 3rem;
+  }
+}
+
+.site-description {
+  font-family: $text;
+  font-size: $large;
+}
+
+// content styles
+h2 {
+  font-family: $headlines;
+  a {
+    text-decoration: none;
+  }
+}
+
+.entry-content {
+  font-family: $text;
+}
+
+// below posts
+.entry-footer {
+
+}
+
+.posted-on, .byline {
+  font-size: $small;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.cat-links {
+  font-size: $small;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+// code and similar
+pre,
+code {
+  font-family: $monospace;
+}
+
+// sidebar
+.widget-area {
+  font-size: $small;
+}
+
+.comment-respond {
+  background-color: $grey;
+}

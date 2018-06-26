@@ -1,0 +1,44 @@
+/**!
+ * file: _nav.scss
+ * menu styles
+ **/
+
+// menu colors
+$background: #000;
+$foreground: #fff;
+$nav-hover: #24d83c; // nerdish-green
+
+ #site-navigation, .sub-menu {
+    background: $background;
+
+    // dropshadow
+    // @url: https://www.cssmatic.com/box-shadow
+    -webkit-box-shadow: 3px 13px 36px -13px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 13px 36px -13px rgba(0,0,0,0.75);
+    box-shadow: 3px 13px 36px -13px rgba(0,0,0,0.75);
+
+    // gradient
+    // @url: see above
+    background: #000000;/* Old Browsers */
+    background: -moz-linear-gradient(top, #000000 0%, #424242 95%, #000000 100%); /* FF3.6+ */
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, #000000), color-stop(95%, #424242), color-stop(100%, #000000));/* Chrome, Safari4+ */
+    background: -webkit-linear-gradient(top, #000000 0%, #424242 95%, #000000 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #000000 0%, #424242 95%, #000000 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #000000 0%, #424242 95%, #000000 100%); /* IE 10+ */
+    background: linear-gradient(to bottom, #000000 0%, #424242 95%, #000000 100%);/* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0 );/* IE6-9 */
+
+   li {
+     margin-left: 1rem;
+     padding-top: 0.5rem;
+     padding-bottom: 0.5rem;
+   }
+
+   a {
+     color: $foreground;
+   }
+
+   a:hover {
+     color: $nav-hover;
+   }
+ }

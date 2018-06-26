@@ -20,5 +20,10 @@ Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
 
-@import 'org-style';	// styles from _S
-@import 'layout' // responsive styles and layout
+@import 'org-style';	  // styles from the  _S theme
+
+/*! ADDITIONAL STYLES */
+
+@import 'layout';       // responsive
+@import 'typography';   // font faces
+@import 'nav';         // navigation
