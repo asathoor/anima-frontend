@@ -16,6 +16,7 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 
 	<!-- enable jQuery -->
 	<?php wp_enqueue_script("jQuery"); ?>
@@ -27,8 +28,11 @@
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'anima-petj' ); ?></a>
 
+	<!-- HEADER -->
 	<header id="masthead" class="site-header">
+
 		<div class="site-branding">
+
 			<?php
 			the_custom_logo();
 			if ( is_front_page() && is_home() ) :
@@ -48,7 +52,7 @@
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'anima-petj' ); ?></button>
+			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"> <?php esc_html_e( 'Menu', 'anima-petj' ); ?></button>
 			<?php
 			wp_nav_menu( array(
 				'theme_location' => 'menu-1',

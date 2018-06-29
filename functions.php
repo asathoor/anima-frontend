@@ -74,8 +74,8 @@ if ( ! function_exists( 'anima_petj_setup' ) ) :
 		 * @link https://codex.wordpress.org/Theme_Logo
 		 */
 		add_theme_support( 'custom-logo', array(
-			'height'      => 250,
-			'width'       => 250,
+			'height'      => 150,
+			'width'       => 150,
 			'flex-width'  => true,
 			'flex-height' => true,
 		) );
@@ -123,7 +123,6 @@ function anima_petj_scripts() {
 
 	// stylesheets
 	wp_enqueue_style( 'anima-petj-style', get_stylesheet_uri() );
-	wp_enqueue_style( 'anima-petj-font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css', array(), '1.0.0', true );
 
 	// scripts
 	wp_enqueue_script( 'anima-petj-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );

@@ -1,5 +1,33 @@
 /*! file: _layout.scss */
 
+/* header */
+
+// container
+.site-branding {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+// Logo
+.custom-logo {
+  margin-right: 1rem;
+  }
+
+// Header text
+.site-title {
+  a:hover {
+    color: red;
+  }
+}
+
+
+/* responsive mixin */
 @mixin responsive( $page-width, $primary-width, $secondary-width ) {
 
   #page {
@@ -27,7 +55,6 @@
   	margin-left: 1%;
   }
 } // responsive mixin
-
 
 /* WIDER MEDIA */
 
