@@ -1082,6 +1082,9 @@ li,
 dd {
   max-width: 50rem; }
 
+.post-edit-link {
+  text-decoration: none; }
+
 /**!
  * file: _nav.scss
  * menu styles

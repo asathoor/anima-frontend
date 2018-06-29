@@ -19,7 +19,9 @@ $j(function(){
     $j('.menu-toggle').prepend('<i class="fas fa-home"></i> ');
 
     // comment
-    $j('#reply-title').prepend('<i class="fas fa-comment"></i> ');
+    $j('#reply-title').prepend('<i class="fas fa-comments"></i> ');
 
+    // edit
+    $j('.post-edit-link').prepend('<i class="fas fa-pen-square"></i> ');
 
 }); // ends jQuery document-ready-function (don't delete this line!)
