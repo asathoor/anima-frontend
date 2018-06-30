@@ -1085,6 +1085,9 @@ dd {
 .post-edit-link {
   text-decoration: none; }
 
+aside ul {
+  padding: 0; }
+
 /**!
  * file: _nav.scss
  * menu styles

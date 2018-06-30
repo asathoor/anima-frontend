@@ -97,3 +97,10 @@ dd {
 .post-edit-link {
   text-decoration: none;
 }
+
+// list indentation in widgets
+aside {
+  ul {
+    padding: 0;
+  }
+}
