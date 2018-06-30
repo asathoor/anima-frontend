@@ -1,21 +1,19 @@
 /**
  * file: myScript.js
  * purpose: add your JavaScript here
+ *
+ * On WP run jQuery in a "no-conflict" way.
+ * note: in this case use $j() as $() in normal jQuery.
  **/
-console.log('Hello from js/myScript.js - Vanilla JavaScript'); // Vanilla JavaScript test
-
 var $j = jQuery.noConflict(); // jQuery in protected mode
 
-/**
- * Run jQuery in a "no-conflict" way
- * note: use $j() not $() in protected mode ;-)
- * document-ready-function
- **/
 $j(function(){
 
-    console.log('Cheers from jQuery too!'); // test
+    // console.log('Cheers from jQuery!'); // test
 
-    // ... add your jQuery below ...
+    // Font Awesome Icons
+
+    // home icon on the responsive menu
     $j('.menu-toggle').prepend('<i class="fas fa-home"></i> ');
 
     // comment
