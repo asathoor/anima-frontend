@@ -24,4 +24,8 @@ $j(function(){
     // edit
     $j('.post-edit-link').prepend('<i class="fas fa-pen-square"></i> ');
 
+    // next / previous post arrows
+    $j('.nav-previous').prepend('<i class="fas fa-arrow-alt-circle-left"></i> '); // previous <
+    $j('.nav-next').append(' <i class="fas fa-arrow-alt-circle-right"></i>'); // next >
+
 }); // ends jQuery document-ready-function (don't delete this line!)
