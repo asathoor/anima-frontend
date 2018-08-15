@@ -1,8 +1,8 @@
 /*!
 Theme Name: Anima-eaaa
-Theme URI: http://underscores.me/
+Theme URI: https://github.com/asathoor/anima-frontend/tree/sass
 Author: Per Thykjaer Jensen
-Author URI: https://multimusen.dk
+Author URI: https://github.com/asathoor/anima-frontend/tree/sass
 Description: A fun and experimental theme animated by JavaScript and CSS.
 Version: 1.0.0
 License: GNU General Public License v2 or later
@@ -873,7 +873,7 @@ object {
 
 /* responsive mixin */
 /* WIDER MEDIA */
-/* larger screen */
+/* larger screens */
 #page {
   width: 95%;
   margin: auto; }
@@ -1045,17 +1045,29 @@ View the selected fonts: https://fonts.google.com/selection?category=Serif,Sans+
   font-family: "Titan One", cursive;
   font-size: 3rem; }
 
+a {
+  text-decoration: none; }
+
 .site-description {
   font-family: "Poppins", sans-serif;
   font-size: 120%; }
 
 h2 {
-  font-family: "Ramabhadra", sans-serif; }
+  font-family: "Ramabhadra", sans-serif;
+  padding-top: 2.5rem; }
   h2 a {
     text-decoration: none; }
 
 .entry-content {
   font-family: "Poppins", sans-serif; }
+
+.entry-meta {
+  font-family: "Poppins", sans-serif;
+  font-size: .7rem; }
+
+.entry-footer {
+  padding-bottom: 1.2rem;
+  border-bottom: 1px dashed silver; }
 
 .posted-on, .byline {
   font-size: 90%;
@@ -1082,11 +1094,28 @@ li,
 dd {
   max-width: 50rem; }
 
-.post-edit-link {
-  text-decoration: none; }
+.post-edit-link, .cat-links, .tags-links {
+  display: block;
+  text-decoration: none;
+  font-size: 90%; }
+  .post-edit-link a, .cat-links a, .tags-links a {
+    text-decoration: none; }
 
 aside ul {
   padding: 0; }
+
+#colophon {
+  color: #fff;
+  background-color: #000;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  text-align: center;
+  font-family: "Poppins", sans-serif; }
+  #colophon a {
+    color: green;
+    text-decoration: none; }
+  #colophon a:hover {
+    color: yellow; }
 
 /**!
  * file: _nav.scss

@@ -9,7 +9,7 @@ var $j = jQuery.noConflict(); // jQuery in protected mode
 
 $j(function(){
 
-    // console.log('Cheers from jQuery!'); // test
+    console.log('Cheers from jQuery!'); // test
 
     // Font Awesome Icons
 

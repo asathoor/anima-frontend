@@ -9,7 +9,6 @@
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-
   flex-wrap: wrap;
   justify-content: flex-start;
 }
@@ -25,7 +24,6 @@
     color: red;
   }
 }
-
 
 /* responsive mixin */
 @mixin responsive( $page-width, $primary-width, $secondary-width ) {
@@ -58,7 +56,7 @@
 
 /* WIDER MEDIA */
 
-/* larger screen */
+/* larger screens */
 #page {
 	width: 95%;
   margin: auto;

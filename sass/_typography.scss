@@ -37,6 +37,11 @@ $grey: #f7f2f4;
   }
 }
 
+// links in general
+a {
+  text-decoration: none;
+}
+
 .site-description {
   font-family: $text;
   font-size: $large;
@@ -45,6 +50,8 @@ $grey: #f7f2f4;
 // content styles
 h2 {
   font-family: $headlines;
+  padding-top: 2.5rem;
+
   a {
     text-decoration: none;
   }
@@ -54,9 +61,15 @@ h2 {
   font-family: $text;
 }
 
+.entry-meta {
+  font-family: $text;
+  font-size: .7rem;
+}
+
 // below posts
 .entry-footer {
-
+  padding-bottom: 1.2rem;
+  border-bottom: 1px dashed silver;
 }
 
 .posted-on, .byline {
@@ -93,14 +106,38 @@ dd {
   max-width: $text-width;
 }
 
-// edit link
-.post-edit-link {
+// edit, categories, tags
+.post-edit-link, .cat-links, .tags-links {
+  display: block;
   text-decoration: none;
+  font-size: $small;
+
+  a {
+    text-decoration: none;
+  }
 }
 
 // list indentation in widgets
 aside {
   ul {
     padding: 0;
+  }
+}
+
+// Footer
+#colophon {
+  color: #fff;
+  background-color: #000;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  text-align: center;
+  font-family: $text;
+
+  a {
+    color: green;
+    text-decoration: none;
+  }
+  a:hover {
+    color: yellow;
   }
 }

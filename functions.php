@@ -164,3 +164,89 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
+
+/**
+* Add support for Gutenberg.
+*
+* @link https://wordpress.org/gutenberg/handbook/reference/theme-support/
+*/
+function mytheme_setup_theme_supported_features() {
+    add_theme_support( 'editor-color-palette', array(
+        array(
+            'name' => __( 'strong magenta', 'themeLangDomain' ),
+            'slug' => 'strong-magenta',
+            'color' => '#a156b4',
+        ),
+        array(
+            'name' => __( 'light grayish magenta', 'themeLangDomain' ),
+            'slug' => 'light-grayish-magenta',
+            'color' => '#d0a5db',
+        ),
+        array(
+            'name' => __( 'very light gray', 'themeLangDomain' ),
+            'slug' => 'very-light-gray',
+            'color' => '#eee',
+        ),
+        array(
+            'name' => __( 'very dark gray', 'themeLangDomain' ),
+            'slug' => 'very-dark-gray',
+            'color' => '#444',
+        ),
+    ) );
+}
+
+add_action( 'after_setup_theme', 'mytheme_setup_theme_supported_features' );
+
+add_theme_support( 'align-wide' );
+
+add_theme_support( 'editor-color-palette', array(
+    array(
+        'name' => __( 'strong magenta', 'themeLangDomain' ),
+        'slug' => 'strong-magenta',
+        'color' => '#a156b4',
+    ),
+    array(
+        'name' => __( 'light grayish magenta', 'themeLangDomain' ),
+        'slug' => 'light-grayish-magenta',
+        'color' => '#d0a5db',
+    ),
+    array(
+        'name' => __( 'very light gray', 'themeLangDomain' ),
+        'slug' => 'very-light-gray',
+        'color' => '#eee',
+    ),
+    array(
+        'name' => __( 'very dark gray', 'themeLangDomain' ),
+        'slug' => 'very-dark-gray',
+        'color' => '#444',
+    ),
+) );
+
+add_theme_support( 'editor-font-sizes', array(
+    array(
+        'name' => __( 'small', 'themeLangDomain' ),
+        'shortName' => __( 'S', 'themeLangDomain' ),
+        'size' => 12,
+        'slug' => 'small'
+    ),
+    array(
+        'name' => __( 'regular', 'themeLangDomain' ),
+        'shortName' => __( 'M', 'themeLangDomain' ),
+        'size' => 16,
+        'slug' => 'regular'
+    ),
+    array(
+        'name' => __( 'large', 'themeLangDomain' ),
+        'shortName' => __( 'L', 'themeLangDomain' ),
+        'size' => 36,
+        'slug' => 'large'
+    ),
+    array(
+        'name' => __( 'larger', 'themeLangDomain' ),
+        'shortName' => __( 'XL', 'themeLangDomain' ),
+        'size' => 50,
+        'slug' => 'larger'
+    )
+) );
+
+add_theme_support( 'disable-custom-colors' );
